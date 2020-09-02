@@ -10,7 +10,8 @@ import org.springframework.stereotype.Service;
 import com.ibm.inventory_management.models.StockItem;
 
 @Service
-@Primary
+//@Primary
+@Profile("cloudant")
 public class StockItemService implements StockItemApi {
     @Override
     public List<StockItem> listStockItems() {
