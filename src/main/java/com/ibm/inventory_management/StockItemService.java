@@ -10,6 +10,7 @@ import org.springframework.stereotype.Service;
 import com.ibm.inventory_management.models.StockItem;
 
 @Service
+@Primary
 public class StockItemService implements StockItemApi {
     @Override
     public List<StockItem> listStockItems() {
